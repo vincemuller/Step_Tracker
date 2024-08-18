@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB1537782C72956000885B40 /* HealthKitPermissionPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1537772C72956000885B40 /* HealthKitPermissionPrimingView.swift */; };
 		EB5F09052C723D6200C2BED7 /* Step_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F09042C723D6200C2BED7 /* Step_TrackerApp.swift */; };
 		EB5F09072C723D6200C2BED7 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F09062C723D6200C2BED7 /* DashboardView.swift */; };
 		EB5F09092C723D6400C2BED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5F09082C723D6400C2BED7 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB1537772C72956000885B40 /* HealthKitPermissionPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionPrimingView.swift; sourceTree = "<group>"; };
 		EB5F09012C723D6200C2BED7 /* Step_Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Step_Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5F09042C723D6200C2BED7 /* Step_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_TrackerApp.swift; sourceTree = "<group>"; };
 		EB5F09062C723D6200C2BED7 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				EB5F09042C723D6200C2BED7 /* Step_TrackerApp.swift */,
 				EB5F09062C723D6200C2BED7 /* DashboardView.swift */,
 				EB5F09122C723DB300C2BED7 /* DataListView.swift */,
+				EB1537772C72956000885B40 /* HealthKitPermissionPrimingView.swift */,
 				EB5F09082C723D6400C2BED7 /* Assets.xcassets */,
 				EB5F090A2C723D6400C2BED7 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				EB5F09132C723DB300C2BED7 /* DataListView.swift in Sources */,
 				EB5F09072C723D6200C2BED7 /* DashboardView.swift in Sources */,
 				EB5F09052C723D6200C2BED7 /* Step_TrackerApp.swift in Sources */,
+				EB1537782C72956000885B40 /* HealthKitPermissionPrimingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
