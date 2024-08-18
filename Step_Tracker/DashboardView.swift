@@ -30,8 +30,8 @@ struct DashboardView: View {
             ScrollView {
                 VStack (spacing: 20) {
                     Picker("Selected Stat", selection: $selectedState) {
-                        ForEach(HealthMetricContext.allCases) { metric in
-                            Text(metric.title)
+                        ForEach(HealthMetricContext.allCases) {
+                            Text($0.title)
                         }
                     }.pickerStyle(.segmented)
                     NavigationLink(value: selectedState, label: {
@@ -60,7 +60,6 @@ struct DashboardView: View {
                         .padding()
                         .background(RoundedRectangle(cornerRadius: 12).fill(Color(.secondarySystemBackground)))
                     })
-                    
                     VStack (alignment: .leading) {
                             VStack (alignment: .leading) {
                                 Label("Averages", systemImage: "calendar")
@@ -78,7 +77,6 @@ struct DashboardView: View {
                     }
                     .padding()
                     .background(RoundedRectangle(cornerRadius: 12).fill(Color(.secondarySystemBackground)))
-                    
                 }
             }
             .navigationTitle("Dashboard")
