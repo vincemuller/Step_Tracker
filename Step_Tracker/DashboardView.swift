@@ -64,15 +64,15 @@ struct DashboardView: View {
                         .background(RoundedRectangle(cornerRadius: 12).fill(Color(.secondarySystemBackground)))
                     })
                     VStack (alignment: .leading) {
-                            VStack (alignment: .leading) {
-                                Label("Averages", systemImage: "calendar")
-                                    .font(.title3.bold())
-                                    .foregroundColor(.pink)
-                                
-                                Text("Last 28 Days")
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                            }
+                        VStack (alignment: .leading) {
+                            Label("Averages", systemImage: "calendar")
+                                .font(.title3.bold())
+                                .foregroundColor(.pink)
+                            
+                            Text("Last 28 Days")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
                         
                         RoundedRectangle(cornerRadius: 12)
                             .foregroundColor(.secondary)
@@ -95,7 +95,7 @@ struct DashboardView: View {
             }, content: {
                 HealthKitPermissionPrimingView(hasSeen: $hasSeenPermissionPriming)
             })
-
+            
         }
         .tint(isSteps ? .pink : .indigo)
     }
