@@ -29,6 +29,12 @@ struct DashboardView: View {
     @State private var selectedState: HealthMetricContext = .steps
     var isSteps: Bool {return selectedState == .steps}
     
+    var avgStepCount: Double {
+        guard !hkManager.stepData.isEmpty else {return 0}
+        let totalSteps = hkManager.stepData.reduce(0) {$0 + $1.value}
+        return totalSteps/Double(hkManager.stepData.count)
+    }
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -46,7 +52,7 @@ struct DashboardView: View {
                                         .font(.title3.bold())
                                         .foregroundColor(.pink)
                                     
-                                    Text("Avg: 10k Steps")
+                                    Text("Avg: \(Int(avgStepCount)) steps")
                                         .font(.caption)
                                 }
                                 
@@ -58,11 +64,29 @@ struct DashboardView: View {
                             .padding(.bottom, 12)
                             
                             Chart {
+                                RuleMark(y: .value("Average", avgStepCount))
+                                    .foregroundStyle(Color.secondary)
+                                    .lineStyle(.init(lineWidth: 1, dash: [5]))
                                 ForEach(hkManager.stepData) { step in
-                                    BarMark(x: .value("Date", step.date, unit: .day), y: .value("Steps", step.value))
+                                    BarMark(x: .value("Date", step.date, unit: .day),
+                                            y: .value("Steps", step.value)
+                                    )
+                                    .foregroundStyle(Color.pink.gradient)
                                 }
                             }
                             .frame(height: 150)
+                            .chartXAxis {
+                                AxisMarks {
+                                    AxisValueLabel(format: .dateTime.month(.defaultDigits).day())
+                                }
+                            }
+                            .chartYAxis {
+                                AxisMarks { value in
+                                    AxisGridLine()
+                                        .foregroundStyle(Color.secondary.opacity(0.3))
+                                    AxisValueLabel((value.as(Double.self) ?? 0).formatted(.number.notation(.compactName)))
+                                }
+                            }
                         }
                         .padding()
                         .background(RoundedRectangle(cornerRadius: 12).fill(Color(.secondarySystemBackground)))
@@ -92,7 +116,8 @@ struct DashboardView: View {
             .padding()
             .task {
                 await hkManager.fetchStepCount()
-                await hkManager.fetchWeights()
+//                await hkManager.fetchWeights()
+//                await hkManager.addSimulatorData()
                 isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
             }
             .navigationTitle("Dashboard")
