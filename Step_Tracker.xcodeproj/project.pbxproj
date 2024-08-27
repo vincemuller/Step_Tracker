@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EB1537782C72956000885B40 /* HealthKitPermissionPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1537772C72956000885B40 /* HealthKitPermissionPrimingView.swift */; };
 		EB15377B2C72E1C100885B40 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB15377A2C72E1C100885B40 /* HealthKitManager.swift */; };
+		EB15377F2C7A0F0800885B40 /* HealthMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB15377E2C7A0F0800885B40 /* HealthMetric.swift */; };
 		EB5F09052C723D6200C2BED7 /* Step_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F09042C723D6200C2BED7 /* Step_TrackerApp.swift */; };
 		EB5F09072C723D6200C2BED7 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F09062C723D6200C2BED7 /* DashboardView.swift */; };
 		EB5F09092C723D6400C2BED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5F09082C723D6400C2BED7 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		EB1537772C72956000885B40 /* HealthKitPermissionPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionPrimingView.swift; sourceTree = "<group>"; };
 		EB1537792C72A98700885B40 /* Step_Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Step_Tracker.entitlements; sourceTree = "<group>"; };
 		EB15377A2C72E1C100885B40 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		EB15377E2C7A0F0800885B40 /* HealthMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMetric.swift; sourceTree = "<group>"; };
 		EB5F09012C723D6200C2BED7 /* Step_Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Step_Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5F09042C723D6200C2BED7 /* Step_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_TrackerApp.swift; sourceTree = "<group>"; };
 		EB5F09062C723D6200C2BED7 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				EB5F09082C723D6400C2BED7 /* Assets.xcassets */,
 				EB5F090A2C723D6400C2BED7 /* Preview Content */,
 				EB15377A2C72E1C100885B40 /* HealthKitManager.swift */,
+				EB15377E2C7A0F0800885B40 /* HealthMetric.swift */,
 			);
 			path = Step_Tracker;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				EB5F09052C723D6200C2BED7 /* Step_TrackerApp.swift in Sources */,
 				EB15377B2C72E1C100885B40 /* HealthKitManager.swift in Sources */,
 				EB1537782C72956000885B40 /* HealthKitPermissionPrimingView.swift in Sources */,
+				EB15377F2C7A0F0800885B40 /* HealthMetric.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
