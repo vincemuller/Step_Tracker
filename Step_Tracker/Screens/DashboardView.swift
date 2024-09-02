@@ -39,23 +39,7 @@ struct DashboardView: View {
                         }
                     }.pickerStyle(.segmented)
                     StepBarChartView(selectedState: selectedState, chartData: hkManager.stepData)
-                    VStack (alignment: .leading) {
-                        VStack (alignment: .leading) {
-                            Label("Averages", systemImage: "calendar")
-                                .font(.title3.bold())
-                                .foregroundColor(.pink)
-                            
-                            Text("Last 28 Days")
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                        }
-                        
-                        Chart {
-                        }
-                        .frame(height: 150)
-                    }
-                    .padding()
-                    .background(RoundedRectangle(cornerRadius: 12).fill(Color(.secondarySystemBackground)))
+                    StepPieChartView(chartData: ChartMath.averageWeekDayCount(for: hkManager.stepData))
                 }
             }
             .padding()
