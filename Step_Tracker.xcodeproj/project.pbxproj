@@ -21,6 +21,8 @@
 		EB5F09092C723D6400C2BED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5F09082C723D6400C2BED7 /* Assets.xcassets */; };
 		EB5F090C2C723D6400C2BED7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5F090B2C723D6400C2BED7 /* Preview Assets.xcassets */; };
 		EB5F09132C723DB300C2BED7 /* DataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F09122C723DB300C2BED7 /* DataListView.swift */; };
+		EBF759D22C910CA9000493A3 /* WeightLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF759D12C910CA9000493A3 /* WeightLineChart.swift */; };
+		EBF759D52C910ED2000493A3 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF759D42C910ED2000493A3 /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		EB5F09082C723D6400C2BED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB5F090B2C723D6400C2BED7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB5F09122C723DB300C2BED7 /* DataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListView.swift; sourceTree = "<group>"; };
+		EBF759D12C910CA9000493A3 /* WeightLineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightLineChart.swift; sourceTree = "<group>"; };
+		EBF759D42C910ED2000493A3 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			children = (
 				EB47222F2C84DABF00507842 /* StepBarChartView.swift */,
 				EB47223E2C85FD3F00507842 /* StepPieChartView.swift */,
+				EBF759D12C910CA9000493A3 /* WeightLineChart.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 		EB5F09032C723D6200C2BED7 /* Step_Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				EBF759D32C910EAA000493A3 /* Utilities */,
 				EB1537792C72A98700885B40 /* Step_Tracker.entitlements */,
 				EB5F09042C723D6200C2BED7 /* Step_TrackerApp.swift */,
 				EB4722342C84E09D00507842 /* Managers */,
@@ -117,7 +123,6 @@
 				EB4722312C84DFFE00507842 /* Screens */,
 				EB5F09082C723D6400C2BED7 /* Assets.xcassets */,
 				EB5F090A2C723D6400C2BED7 /* Preview Content */,
-				EB4722392C8555C100507842 /* Date+Ext.swift */,
 			);
 			path = Step_Tracker;
 			sourceTree = "<group>";
@@ -128,6 +133,15 @@
 				EB5F090B2C723D6400C2BED7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EBF759D32C910EAA000493A3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EB4722392C8555C100507842 /* Date+Ext.swift */,
+				EBF759D42C910ED2000493A3 /* MockData.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +223,7 @@
 				EB5F09132C723DB300C2BED7 /* DataListView.swift in Sources */,
 				EB5F09072C723D6200C2BED7 /* DashboardView.swift in Sources */,
 				EB47223F2C85FD3F00507842 /* StepPieChartView.swift in Sources */,
+				EBF759D52C910ED2000493A3 /* MockData.swift in Sources */,
 				EB5F09052C723D6200C2BED7 /* Step_TrackerApp.swift in Sources */,
 				EB4722302C84DABF00507842 /* StepBarChartView.swift in Sources */,
 				EB4722382C8534F100507842 /* ChartData.swift in Sources */,
@@ -216,6 +231,7 @@
 				EB1537782C72956000885B40 /* HealthKitPermissionPrimingView.swift in Sources */,
 				EB4722362C8534D500507842 /* ChartMath.swift in Sources */,
 				EB15377F2C7A0F0800885B40 /* HealthMetric.swift in Sources */,
+				EBF759D22C910CA9000493A3 /* WeightLineChart.swift in Sources */,
 				EB47223A2C8555C100507842 /* Date+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
