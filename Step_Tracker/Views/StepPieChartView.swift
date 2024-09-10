@@ -55,6 +55,9 @@ struct StepPieChartView: View {
                         Text(selectedWeekDay.date.weekdayTitle)
                             .font(.title3)
                             .fontWeight(.semibold)
+                            .transaction { transaction in
+                                transaction.animation = nil
+                            }
                         Text(selectedWeekDay.value, format: .number.precision(.fractionLength(0)))
                             .font(.body)
                             .foregroundStyle(.secondary)
