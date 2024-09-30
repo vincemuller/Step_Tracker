@@ -53,6 +53,7 @@ struct DashboardView: View {
             .task {
                 await hkManager.fetchStepCount()
                 await hkManager.fetchWeights()
+                ChartMath.averagedailyWeightDiffs(for: hkManager.weightDiffData)
 //                await hkManager.addSimulatorData()
                 isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
             }
